@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('btn-nav');
     const sidebar = document.querySelector('.sidebar');
-    const profilePicIcon = document.getElementById('profile-pic-icon');
-    const userDetails = document.getElementById('user-details');
-
+    const categoryButtons = document.querySelectorAll('.category-btn');
     // Toggle sidebar visibility
     toggleButton.addEventListener('change', function() {
         if (this.checked) {
@@ -19,5 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
             const videoId = this.dataset.videoId;
             window.location.href = `video-view.html?video=${videoId}`;
         });
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                
+                // Muestra todos los videos si se selecciona "Todos"
+                videoItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
     });
+
+
 });
