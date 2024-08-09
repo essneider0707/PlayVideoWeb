@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Videos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <label for="btn-nav" class="btn-nav">☰</label>
+        <input type="checkbox" id="btn-nav">
+        
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Menú</h2>
+                <label for="btn-nav" class="close-icon">×</label>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Principal</a></li>
+                <li><a href="#"><i class="fas fa-video"></i> Shorts</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Suscripciones</a></li>
+                <li><a href="#"><i class="fas fa-user-circle"></i> Tu canal</a></li>
+                <li><a href="#"><i class="fas fa-history"></i> Historial</a></li>
+                <li><a href="#"><i class="fas fa-playlist"></i> Playlists</a></li>
+                <li><a href="#"><i class="fas fa-video"></i> Tus videos</a></li>
+                <li><a href="#"><i class="fas fa-clock"></i> Ver más tarde</a></li>
+                <li><a href="#"><i class="fas fa-thumbs-up"></i> Videos que me gustan</a></li>
+            </ul>
+            
+        </nav>
+        
+        <div class="logo">
+            MiPlataforma
+        </div>
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <div class="user-icons">
+            <a href="#">🔔</a>
+            <a href="#">💬</a>
+            <a href="#">👤</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="category-bar">
+            <button>Todos</button>
+            <button>Música</button>
+            <button>Videojuegos</button>
+            <button>Motocicletas</button>
+            <button>Deportes</button>
+        </div>
+
+        <div class="video-grid">
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img1.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 1</h3>
+                    <p>800k vistas • hace 2 semanas</p>
+                </div>
+            </div>
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img2.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 2</h3>
+                    <p>1M vistas • hace 1 mes</p>
+                </div>
+            </div>
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img3.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 3</h3>
+                    <p>500k vistas • hace 1 semana</p>
+                </div>
+            </div>
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img4.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 4</h3>
+                    <p>2M vistas • hace 3 semanas</p>
+                </div>
+            </div>
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img5.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 5</h3>
+                    <p>600k vistas • hace 2 semanas</p>
+                </div>
+            </div>
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img6.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 6</h3>
+                    <p>750k vistas • hace 1 mes</p>
+                </div>
+            </div>
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img7.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 7</h3>
+                    <p>1.5M vistas • hace 1 mes</p>
+                </div>
+            </div>
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img8.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 8</h3>
+                    <p>900k vistas • hace 3 semanas</p>
+                </div>
+            </div>
+            <div class="video-item"data-video-id="video1">
+                <img src="img/img9.jpg" alt="Video Thumbnail">
+                <div class="video-info">
+                    <h3>Título del Video 8</h3>
+                    <p>900k vistas • hace 3 semanas</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MiPlataforma. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

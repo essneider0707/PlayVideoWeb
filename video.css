@@ -1,0 +1,238 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Header */
+header, footer {
+    background-color: #202020;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    width: 400px;
+    padding: 10px;
+    background-color: #121212;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.search-bar:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.user-icons a {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.user-icons a:hover {
+    color: #ff0000;
+    transition: color 0.3s;
+}
+
+/* Video View */
+.video-view {
+    display: flex;
+    padding: 20px;
+    background-color: #181818;
+    min-height: calc(100vh - 80px); /* Ajustar altura para header y footer */
+}
+
+.video-main {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.video-container {
+    background-color: #202020;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 60vh; /* Ajusta la altura del video */
+    border: none;
+}
+
+.video-info {
+    padding: 15px;
+    color: #fff;
+    border-top: 1px solid #333;
+    background-color: #202020;
+}
+
+.video-info h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.video-info p {
+    font-size: 16px;
+    color: #aaa;
+    margin: 5px 0 0;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #202020;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.comments-section h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #fff;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.comment-form button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #cc0000;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.comment strong {
+    color: #fff;
+}
+
+/* Recommended Videos */
+.recommended-videos {
+    flex: 1;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* El contenedor se expande verticalmente a medida que se agregan más videos */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
+}
+
+.recommended-videos h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.recommended-item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.recommended-item:last-child {
+    border-bottom: none;
+}
+
+.recommended-item img {
+    width: 160px;
+    height: 90px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.recommended-info {
+    flex: 1;
+}
+
+.recommended-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.recommended-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #202020;
+    color: #ffffff;
+    text-align: center;
+}

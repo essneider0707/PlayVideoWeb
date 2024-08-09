@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Video</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <a href="index.html" class="btn-nav">←</a>
+        <div class="logo">MiPlataforma</div>
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <div class="user-icons">
+            <a href="#">🔔</a>
+            <a href="#">💬</a>
+            <a href="#">👤</a>
+        </div>
+    </header>
+
+    <!-- Video View -->
+    <main class="video-view">
+        <div class="video-main">
+            <div class="video-container">
+                <iframe id="video-player" src="" frameborder="0" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h1 id="video-title">Título del Video</h1>
+                    <p id="video-description">Descripción del video</p>
+                </div>
+                <!-- Comments Section inside video-main -->
+                <section class="comments-section">
+                    <h2>Comentarios</h2>
+                    <div class="comment-form">
+                        <textarea placeholder="Escribe tu comentario..."></textarea>
+                        <button>Comentar</button>
+                    </div>
+                    <div class="comments-list">
+                        <div class="comment">
+                            <p><strong>Usuario 1:</strong> ¡Excelente video! Muy informativo.</p>
+                        </div>
+                        <div class="comment">
+                            <p><strong>Usuario 2:</strong> Gracias por compartir, aprendí mucho.</p>
+                        </div>
+                        <!-- Añade más comentarios según sea necesario -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="recommended-videos">
+            <h2>Videos Recomendados</h2>
+            <div class="recommended-item">
+                <img src="img/img1.jpg" alt="Video Thumbnail">
+                <div class="recommended-info">
+                    <h3>Título del Video Recomendado 1</h3>
+                    <p>800k vistas • hace 2 semanas</p>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="img/img2.jpg" alt="Video Thumbnail">
+                <div class="recommended-info">
+                    <h3>Título del Video Recomendado 2</h3>
+                    <p>1M vistas • hace 1 mes</p>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="img/img3.jpg" alt="Video Thumbnail">
+                <div class="recommended-info">
+                    <h3>Título del Video Recomendado 1</h3>
+                    <p>800k vistas • hace 2 semanas</p>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="img/img4.jpg" alt="Video Thumbnail">
+                <div class="recommended-info">
+                    <h3>Título del Video Recomendado 1</h3>
+                    <p>800k vistas • hace 2 semanas</p>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="img/img5.jpg" alt="Video Thumbnail">
+                <div class="recommended-info">
+                    <h3>Título del Video Recomendado 1</h3>
+                    <p>800k vistas • hace 2 semanas</p>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="img/img6.jpg" alt="Video Thumbnail">
+                <div class="recommended-info">
+                    <h3>Título del Video Recomendado 1</h3>
+                    <p>800k vistas • hace 2 semanas</p>
+                </div>
+            </div>
+            <div class="recommended-item">
+                <img src="img/img7.jpg" alt="Video Thumbnail">
+                <div class="recommended-info">
+                    <h3>Título del Video Recomendado 1</h3>
+                    <p>800k vistas • hace 2 semanas</p>
+                </div>
+            </div>
+            <!-- Añade más videos recomendados según sea necesario -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MiPlataforma. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="video-view.js"></script>
+</body>
+</html>
